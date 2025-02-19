@@ -1,2 +1,2 @@
 # bookbot
-Boot dot dev python project
+BookBot is not my first project!
