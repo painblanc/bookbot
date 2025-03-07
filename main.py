@@ -1,5 +1,15 @@
+import sys
+
 def main():
-    file = "books/frankenstein.txt"
+
+    # I want to be able to run the program from the command line
+    # I want to be able to pass in a file as an argument
+    # I want to be able to read the contents of the file
+    if len(sys.argv) != 2:
+        print("Usage: python main.py <file>")
+        sys.exit(1)
+
+    file = sys.argv[1]
     with open(file) as f:
         text = f.read()
         count = word_count(text)
